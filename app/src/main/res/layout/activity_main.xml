@@ -17,10 +17,11 @@
         android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="close image button"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvQuestionWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -29,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:text="Galaxy"
+        android:text="Galaxy"
         android:layout_marginTop="94dp"
         android:fontFamily="@font/nunito_bold"
         />
@@ -42,7 +43,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionWord"
         android:layout_marginTop="80dp">
 
         <LinearLayout
@@ -70,9 +71,8 @@
                 android:layout_marginStart="12dp"
                 android:gravity="center"
                 android:text="Сломать"
-                android:textColor="#888992"
-                android:textSize="16sp"
-                android:fontFamily="@font/rubik_regular"/>
+                tools:ignore="HardcodedText"
+                style="@style/TextViewVariantsStyle"/>
 
         </LinearLayout>
 
@@ -101,9 +101,8 @@
                 android:layout_marginStart="12dp"
                 android:gravity="center"
                 android:text="Сон"
-                android:textColor="#888992"
-                android:textSize="16sp"
-                android:fontFamily="@font/rubik_regular"/>
+                tools:ignore="HardcodedText"
+                style="@style/TextViewVariantsStyle"/>
 
         </LinearLayout>
 
@@ -132,9 +131,8 @@
                 android:layout_marginStart="12dp"
                 android:gravity="center"
                 android:text="Галактика"
-                android:textColor="#888992"
-                android:textSize="16sp"
-                android:fontFamily="@font/rubik_regular"/>
+                tools:ignore="HardcodedText"
+                style="@style/TextViewVariantsStyle"/>
 
         </LinearLayout>
 
@@ -163,9 +161,8 @@
                 android:layout_marginStart="12dp"
                 android:gravity="center"
                 android:text="Утюг"
-                android:textColor="#888992"
-                android:textSize="16sp"
-                android:fontFamily="@font/rubik_regular"/>
+                tools:ignore="HardcodedText"
+                style="@style/TextViewVariantsStyle"/>
 
         </LinearLayout>
 
@@ -181,7 +178,7 @@
         android:visibility="gone"
         android:height="58dp"
         android:backgroundTint="#2574FF"
-        android:text="Skip"/>
+        android:text="@string/button_skip"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -201,12 +198,13 @@
             android:layout_marginTop="18dp"
             android:src="@drawable/ic_correct"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="correct answer icon"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correct!"
+            android:text="@string/title_correct"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/imageView"
@@ -217,7 +215,7 @@
         <android.widget.Button
             android:layout_width="311dp"
             android:layout_height="58dp"
-            android:text="Continue"
+            android:text="@string/button_continue"
             android:textAllCaps="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

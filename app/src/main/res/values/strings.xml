@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">EnglishWordsApp</string>
-    <string name="variant_1">1</string>
+    <string name="variant_1" translatable="false">1</string>
+    <string name="button_skip">Skip</string>
+    <string name="title_correct">Correct!</string>
+    <string name="button_continue">Continue</string>
 </resources>
